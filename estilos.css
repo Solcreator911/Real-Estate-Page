@@ -1,84 +1,206 @@
 body {
+    /* Estilos generales para el cuerpo */
     background-color: #493a35;
+    /* Color de fondo marrón claro */
     scroll-behavior: smooth;
+    /* Desplazamiento suave al hacer scroll */
     height: 100%;
+    /* Asegura que el cuerpo ocupe todo el alto de la ventana */
 }
 
 nav {
+    /* Estilos para la barra de navegación */
     text-align: end;
+    /* Alinea el contenido del nav al final (derecha) */
 
 }
 
 a {
+    /* Estilos para los enlaces */
     display: inline-block;
+    /* Hace que los enlaces se comporten como bloques en línea */
     border-radius: 15%;
+    /* Bordes redondeados para los enlaces */
     text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
     color: #07243e;
+    /* Color azul para el texto de los enlaces */
     font-size: 17px;
+    /* Tamaño de fuente para los enlaces */
     padding: 10px;
+    /* Espacio interno alrededor del texto del enlace */
 }
 
 a:hover {
+    /* Efecto al pasar el mouse sobre los enlaces */
     background-color: #092e4f;
+    /* Cambia el fondo a un azul más oscuro */
 }
 
 .Eslogan {
+    /* Estilos para el eslogan */
     text-align: center;
+    /* Centra el texto del eslogan */
     background-image: url('img/logo\%20de\%20inmobiliaria.\%20Que\%20diga\%20Karina\%20Pilares\%20Sólidos.jpg');
+    /* Imagen de fondo del eslogan */
     height: 1000px;
+    /* Altura del eslogan */
     max-width: 1173px;
+    /* Ancho máximo del eslogan */
     background-repeat: no-repeat;
+    /* Evita que la imagen de fondo se repita */
+    /* Evita que la imagen de fondo se repita */
     /* Para que la imagen no se duplique */
     background-position: center center;
-    /* ¡Esto es lo que la centra! */
+    /* Centra la imagen de fondo tanto vertical como horizontalmente */
     background-size: cover;
-    /* Para que la imagen cubra todo el espacio sin dejar huecos */
+    /* Asegura que la imagen cubra todo el espacio disponible */
     margin: 0% auto;
+    /* Centra el eslogan horizontalmente en la página */
 }
 
 
 
 h1 {
+    /* Estilos para el título principal */
     padding-top: 200px;
+    /* Espacio arriba del título */
     font-size: 50px;
+    /* Tamaño de fuente grande para el título */
     color: #07243e;
+    /* Color azul para el título */
+}
+
+h2, h3 {
+    /* Estilos para los subtítulos */
+    color: #07243e;
+    /* Color azul para los subtítulos */
+    text-align: center;
+    /* Centra el texto de los subtítulos */
+    margin-top: 20px;
+    /* Espacio arriba del subtítulo */
+    background-color: #f0f0f0; /* Fondo claro para los subtítulos */
+    height: 50px; /* Altura fija para los subtítulos */
+    padding: 10px; /* Espacio interno para los subtítulos */
+    font-size: 30px; /* Tamaño de fuente grande para los subtítulos */
+
+}
+
+.sub-Titulo {
+   color: #07243e;
+    /* Color azul para los subtítulos */
+    text-align: center;
+    /* Centra el texto de los subtítulos */
+    margin-top: 20px;
+    font-size: 40px; 
+    background-color:#493a35 ; /* Fondo marrón claro para los subtítulos */
+}
+
+.introduccion-servicios{
+    text-align: center;
+    margin-top: -200px;
+}
+
+.info-contenido{
+font-size: 20px;
+color: #07243e;
+text-align: center;
+margin: 20px;
+padding: 10px;
 }
 
 .Servicio {
+    /* Estilos para la sección de servicios */
     padding-top: 200px;
-    font-size: 25px;
+    /* Espacio arriba de la sección de servicios */
     color: #07243e;
+    /* Color azul para el texto de los servicios */
     text-align: center;
+    /* Centra el texto de los servicios */
     height: 900px;
-
+    /* Altura de la sección de servicios */
+     border-bottom: #07243e;  /* Línea azul debajo de la sección de servicios */
+     background-image: url('img/aGENTE\ INmobiliario.JPG');
 }
 
-.info-contenido {
-    display: flex; /* ¡Activa Flexbox! Los hijos se colocarán en fila */
-    flex-direction: row; /* Asegura que los elementos vayan en fila (por defecto, pero explícito) */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-    justify-content: center; /* Centra los elementos horizontalmente si hay espacio extra */
-    max-width: 1200px; /* Ancho máximo para el contenido, para que no se estire demasiado */
-    margin: 0 auto; /* Centra el contenedor Flexbox en la página */
-    gap: 40px; /* Espacio entre la imagen y el texto */
-    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+.imagen{
+   
 }
 
-.inmueblesMostrar{
-    justify-content: center;
-    display: flex;
-}
 
-.contenedor-inmuebles{
+.propiedades {
+    /* Estilos para la sección de propiedades */
     display: grid;
+    /* Utiliza Grid para organizar las tarjetas */
     flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+    align-items: center;
+    /* Alinea las tarjetas verticalmente al centro */
     justify-content: center;
+    /* Alinea las tarjetas horizontalmente al centro */
     gap: 5px;
+    /* Espacio entre las tarjetas */
+    max-width: 100%;
+    /* Ancho máximo para que no se estire demasiado */
+    margin: auto 0;
+    /* Centra el contenedor de inmuebles en la página */
+    grid-template-columns: repeat(4, 1fr);
+    /* Cuatro columnas de igual tamaño*/
+    grid-template-rows: repeat(2, 1fr);
+    /* Dos filas de igual tamaño */
+    color: #07243e;
+    /* Color azul para el texto */
+    margin: 20px 0;
+    /* Espacio arriba y abajo del título */
+    padding: 10px;
+    /* Espacio interno para el título */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    border-bottom: 2px solid #07243e;
+    /* Línea azul debajo del título */
+    box-sizing: border-box;
+    /* Asegura que el padding y el border se incluyan en el ancho total */
+    width: 100%;
+    /* Ancho completo del título */
+    background-color: #f0f0f0;
+    /* Fondo claro para el título */
+    padding-bottom: 10px;
+    /* Espacio adicional debajo del título */
+    margin-bottom: 20px;
+    /* Espacio adicional debajo del título */
 }
 
-.inmueble-card{
+
+
+.inmueblesMostrar {
+    font-family: 'Arial', sans-serif;
+    /* Fuente Arial para el título */
+    font-weight: bold;
+    /* Negrita para el título */
+    font-size: 24px;
+    /* Tamaño de fuente para el título */
+    text-align: center;
+    /* Centra el texto del título */
+    color: #07243e;
+    /* Color azul para el título */
+    ;
+}
+
+.inmueble-card {
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #07243e;
+    /* Borde azul */
+}
+
+.inmueble-card img {
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el espacio de la tarjeta */
+    width: 100%;
+    /* Ancho completo de la tarjeta */
+    height: 200px;
+    /* Altura fija para las imágenes */
 }
