@@ -1,0 +1,1 @@
+This is a page for an enterprise. They needed a place where they could publish they're properties on sell and a way to keep in touch with their future clients which they could file a form for infomation about a house if they want to buy or maybe they want to hire the real-estate agent for buisness matters.
