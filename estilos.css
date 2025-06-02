@@ -1,0 +1,84 @@
+body {
+    background-color: #493a35;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+nav {
+    text-align: end;
+
+}
+
+a {
+    display: inline-block;
+    border-radius: 15%;
+    text-decoration: none;
+    color: #07243e;
+    font-size: 17px;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #092e4f;
+}
+
+.Eslogan {
+    text-align: center;
+    background-image: url('img/logo\%20de\%20inmobiliaria.\%20Que\%20diga\%20Karina\%20Pilares\%20Sólidos.jpg');
+    height: 1000px;
+    max-width: 1173px;
+    background-repeat: no-repeat;
+    /* Para que la imagen no se duplique */
+    background-position: center center;
+    /* ¡Esto es lo que la centra! */
+    background-size: cover;
+    /* Para que la imagen cubra todo el espacio sin dejar huecos */
+    margin: 0% auto;
+}
+
+
+
+h1 {
+    padding-top: 200px;
+    font-size: 50px;
+    color: #07243e;
+}
+
+.Servicio {
+    padding-top: 200px;
+    font-size: 25px;
+    color: #07243e;
+    text-align: center;
+    height: 900px;
+
+}
+
+.info-contenido {
+    display: flex; /* ¡Activa Flexbox! Los hijos se colocarán en fila */
+    flex-direction: row; /* Asegura que los elementos vayan en fila (por defecto, pero explícito) */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra los elementos horizontalmente si hay espacio extra */
+    max-width: 1200px; /* Ancho máximo para el contenido, para que no se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor Flexbox en la página */
+    gap: 40px; /* Espacio entre la imagen y el texto */
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+}
+
+.inmueblesMostrar{
+    justify-content: center;
+    display: flex;
+}
+
+.contenedor-inmuebles{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.inmueble-card{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
